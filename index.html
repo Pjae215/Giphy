@@ -1,12 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Giphy</title>
+	<title>Animated Characters</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
-<body>
-    
+<body id="wholeThing">
+
+<div class="jumbotron" id="header">
+  <img id="topImageL" src="https://media1.giphy.com/media/11FvLMSmlO0orm/giphy.gif?cid=790b76115d175c426542773136ad1285&rid=giphy.gif">
+  <img id="topImageR" src="https://media1.giphy.com/media/ANbD1CCdA3iI8/giphy.gif?cid=790b76115d175c2b6e354f5873bef0b1&rid=giphy.gif">
+  <h1>My Favorite Animated TV Personalities</h1>
+  <h4>Click the buttons to display GIPHYs my favorite animated tv personalities
+    <br>
+Click the GIPHYs to pause and play<br>Add your favorite characters too!</h4>
+</div>
+
+<form class="form-inline" id="characterSearch">
+  <div class="form-group">
+    <label for="characterInput">Search for your favorite characters</label>
+    <input type="text" id="characterInput">
+  </div>
+  <!-- Button triggers show to be added -->
+  <input id="addcharacter" type="submit" value="submit">
+</form>
+
+<div class="row">
+  <div class="container">
+    <div class="btn-group inline pull-left">
+      <button class="btn btn-primary" id="gifbutton" data-search="Homer Simpson">Homer Simpson</button>
+      <button class="btn btn-primary" id="gifbutton" data-search="Penny Proud">Penny Proud</button>
+      <button class="btn btn-primary" id="gifbutton" data-search="Stewie Griffin">Stewie Griffin</button>
+      <button class="btn btn-primary" id="gifbutton" data-search="new person">new person</button>
+
+      <div id="myButtons"></div>
+    </div> <!--end of button group -->
+  </div> <!--end of container -->
+</div> <!--end of row -->
+
+
+<div class="row">
+  <div class="container">
+      <span><div id="gifArea"></div></span>
+  </div> <!--end of container -->
+</div> <!-- end of row  -->
+
+
+<script src="assets/giphy.js"</script>
+// <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
 </body>
 </html>
