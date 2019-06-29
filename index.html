@@ -1,54 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Animated Characters</title>
+	<title>Giphys</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="assets/style.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 <body id="wholeThing">
-
+<!-- Header formatting and text -->
 <div class="jumbotron" id="header">
-  <img id="topImageL" src="https://media1.giphy.com/media/11FvLMSmlO0orm/giphy.gif?cid=790b76115d175c426542773136ad1285&rid=giphy.gif">
-  <img id="topImageR" src="https://media1.giphy.com/media/ANbD1CCdA3iI8/giphy.gif?cid=790b76115d175c2b6e354f5873bef0b1&rid=giphy.gif">
-  <h1>My Favorite Animated TV Personalities</h1>
-  <h4>Click the buttons to display GIPHYs my favorite animated tv personalities
-    <br>
-Click the GIPHYs to pause and play<br>Add your favorite characters too!</h4>
+  <img id="topImageL" src="https://media1.giphy.com/media/12JzCg2xAUIEHm/giphy.gif?cid=790b76115d17a0bf7163583132998293&rid=giphy.gif">
+  <img id="topImageR" src="https://media1.giphy.com/media/7DeOWsF013XZm/giphy.gif?cid=790b76115d17a0bf7163583132998293&rid=giphy.gif">
+  <h1>My Favorite Animated TV Characters</h1>
+  <h4>Click the blue buttons to display GIPHYs of my favorite characters<br>You can click each GIPHY to make it pause or play.<br>You may also add your own characters!</h4>
 </div>
-
-<form class="form-inline" id="characterSearch">
+<!-- Form creation for user input and submission -->
+<form class="form-inline" id="userSearch">
   <div class="form-group">
-    <label for="characterInput">Search for your favorite characters</label>
-    <input type="text" id="characterInput">
+    <label for="userInput">Search for Your Favorite Character</label>
+    <input type="text" id="userInput">
   </div>
-  <!-- Button triggers show to be added -->
-  <input id="addcharacter" type="submit" value="submit">
+  <input id="addname" type="Submit" value="Submit">
 </form>
-
+<!--Creation of buttons to show on load -->
 <div class="row">
   <div class="container">
     <div class="btn-group inline pull-left">
-      <button class="btn btn-primary" id="gifbutton" data-search="Homer Simpson">Homer Simpson</button>
-      <button class="btn btn-primary" id="gifbutton" data-search="Penny Proud">Penny Proud</button>
-      <button class="btn btn-primary" id="gifbutton" data-search="Stewie Griffin">Stewie Griffin</button>
-      <button class="btn btn-primary" id="gifbutton" data-search="new person">new person</button>
+      <button class="btn btn-primary" id="familyguy" data-search="Peter Griffin">Peter Griffin</button>
+      <button class="btn btn-primary" id="familyguy" data-search="Penny Proud">Penny Proud</button>
+      <button class="btn btn-primary" id="familyguy" data-search="South Park Chef">South Park Chef</button>
+      <button class="btn btn-primary" id="familyguy" data-search="Tina Belcher">Tina Belcher</button>
 
       <div id="myButtons"></div>
-    </div> <!--end of button group -->
-  </div> <!--end of container -->
-</div> <!--end of row -->
+    </div> 
+  </div> 
+</div> 
 
-
+<!--For Gifs to show -->
 <div class="row">
   <div class="container">
       <span><div id="gifArea"></div></span>
-  </div> <!--end of container -->
-</div> <!-- end of row  -->
+  </div> 
+</div> 
 
 
-<script src="assets/giphy.js"</script>
-// <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="assets/giphy.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
 </body>
 </html>
+

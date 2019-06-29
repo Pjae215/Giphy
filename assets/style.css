@@ -4,10 +4,26 @@
 	text-align: center;
 	padding-top: 10px;
 	padding-bottom: 15px;
-	font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif
 }
 
- #topImageL {
+h1 {
+	background-color: lightblue;
+	color: black;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 15px;
+	font-family: Arial, Helvetica, sans-serif
+}
+h4 {
+	background-color: lightblue;
+	color: black;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 15px;
+	font-family: Arial, Helvetica, sans-serif
+}
+#topImageL {
 	width: 15%;
 	float: left;
 	margin-left: 20px;
@@ -16,20 +32,21 @@
 #topImageR {
 	width: 15%;
 	float: right;
-	margin-right: 20px;}
+	margin-right: 20px;
+}
 
 label {
 	font-size: 18px;
 }
 
-#gifbutton {
+#familyguy {
 	margin-right: 5px;
 	margin-left: 5px;
 	margin-top: 5px;
 	margin-bottom: 5px;
 }
 
-#characterSearch {
+#userSearch {
 	margin: 0 auto;
 	text-align: center;
 	font-family: "Carrois Gothic SC", sans-serif;
@@ -39,4 +56,9 @@ label {
 	clear: both;
 	display: inline;
 	flex-wrap: wrap;
+}
+
+.myGiphy {
+	padding: 2px;
+	width: 80%;
 }
